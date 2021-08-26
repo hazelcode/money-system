@@ -1,6 +1,5 @@
 ## Funciones a repetir
 function stevedemaincra:economia/ecodatos
-function stevedemaincra:economia/comandos/pagar100
 
 ## Comandos a repetir
 
