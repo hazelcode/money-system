@@ -1,4 +1,4 @@
-## PAGAR 1 ##
+﻿## PAGAR 1 ##
 execute if score @s pagar matches 1 run tag @s add persona1
 execute if score @s pagar matches 1 run tellraw @s {"text":"Espera a que la segunda persona acepte tu pago","color":"yellow"}
 execute if score @s pagar matches 1 run tellraw @s {"text":"Dile que ejecute /trigger recibirPago set 1 para que le pueda llegar el pago","color":"aqua"}
@@ -39,5 +39,5 @@ execute if score @s pagar matches -1 run scoreboard players reset @a[tag=persona
 execute if score @s pagar matches -1 run tellraw @s {"text":"[ECONOMIA] Pago cancelado con éxito, no se te ha cobrado nada","color":"green"}
 ## USO INVALIDO ##
 execute as @a[scores={pagar=..-2}] run tellraw @a[scores={pagar=..-2}] {"text":"[ECONOMIA] Mínimo del valor excedido, sólo aceptamos -1, 1, 10, 100 y 1000","color":"red"}
-execute as @a[scores={pagar=1001..}] run tellraw @a[scores={pagar=1001..}] {"text":"[ECONOMIA] Máximo del valor excedido, sólo aceptamos 1, 10, 100 y 1000","color":"red"}
+execute as @a[scores={pagar=1001..}] run tellraw @a[scores={pagar=1001..}] {"text":"[ECONOMIA] Máximo del valor excedido, sólo aceptamos -1, 1, 10, 100 y 1000","color":"red"}
 execute as @a[scores={pagar=..-2}, scores={pagar=1001..}] run trigger pagar set 0

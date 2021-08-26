@@ -1,4 +1,4 @@
-## RECIBIR 1 ##
+﻿## RECIBIR 1 ##
 execute if score @s recibirPago matches 1 run tag @s add persona2
 execute if score @s recibirPago matches 1 run scoreboard players remove @a[tag=persona1] dolares 1
 execute if score @s recibirPago matches 1 run scoreboard players add @s dolares 1
@@ -44,5 +44,5 @@ execute if score @s recibirPago matches -1 run tag @a remove persona2
 execute if score @s recibirPago matches -1 run scoreboard players set @s recibirPago 0
 ## USO INVÁLIDO ##
 execute as @a[scores={recibirPago=..-2}] run tellraw @a[scores={recibirPago=..-2}] {"text":"[ECONOMIA] Mínimo del valor excedido, sólo aceptamos -1, 1, 10, 100 y 1000","color":"red"}
-execute as @a[scores={recibirPago=1001..}] run tellraw @a[scores={recibirPago=1001..}] {"text":"[ECONOMIA] Máximo del valor excedido, sólo aceptamos 1, 10, 100 y 1000","color":"red"}
+execute as @a[scores={recibirPago=1001..}] run tellraw @a[scores={recibirPago=1001..}] {"text":"[ECONOMIA] Máximo del valor excedido, sólo aceptamos -1, 1, 10, 100 y 1000","color":"red"}
 execute as @a[scores={recibirPago=..-2}, scores={recibirPago=1001..}] run trigger recibirPago set 0
