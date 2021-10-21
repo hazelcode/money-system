@@ -7,4 +7,4 @@ Gracias por la visita! Por favor lea la siguiente licencia antes de descargar y 
 
 # Licencia
 
-Éste datapack está originalmente creado por tacozyt (En gitHub), no redistribuyas éste datapack. Puedes colaborar en éste datapack libremente.
+Éste datapack está originalmente creado por tacozyt (En GitHub), no redistribuyas éste datapack. Puedes colaborar en éste datapack libremente.
